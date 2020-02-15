@@ -31,4 +31,9 @@ export class CartComponent {
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();
   }
+
+  removeItem(index){
+    this.cartService.removeItem(index);
+  }
+
 }
